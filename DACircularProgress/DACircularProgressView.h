@@ -8,6 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
+@interface DACircularProgressLayer : CALayer
+
+@property(nonatomic, strong) UIColor *trackTintColor;
+@property(nonatomic, strong) UIColor *progressTintColor;
+@property(nonatomic, strong) UIColor *innerTintColor;
+@property(nonatomic) NSInteger roundedCorners;
+@property(nonatomic) CGFloat thicknessRatio;
+@property(nonatomic) CGFloat progress;
+@property(nonatomic) NSInteger clockwiseProgress;
+
+@end
+
 @interface DACircularProgressView : UIView
 
 @property(nonatomic, strong) UIColor *trackTintColor UI_APPEARANCE_SELECTOR;
